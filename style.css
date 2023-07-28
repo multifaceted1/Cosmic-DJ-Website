@@ -60,3 +60,32 @@ div.images {
     flex-wrap: wrap;
     justify-content: center;
 }
+/* homepage */
+#mainTitle {
+    
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1.5s ease-in-out infinite alternate;
+      }
+      
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #ece6d3, 0 0 17px #dfc780, 0 0 26px #f7b756;
+        }
+        
+        to {
+          text-shadow: 0 0 8px #fff, 0 0 14px #fff, 0 0 20px #ece6d3, 0 0 28px #dfc780, 0 0 40px #f7b756;
+        }
+      }
+
+@media screen and (max-width: 700px) {
+    div.cuties {
+      display: block;
+      margin:0;
+    }
+
+    #mainTitle {
+        font-size: 50px;
+    }
+  }
