@@ -6,12 +6,36 @@ header {
     width:100%;
     padding-bottom: 45px;
     text-align: center;
+    justify-content: center;
+
 }
 
+#navMargin {
+    width:100wv;
+    margin: 0;
+    background-color: rgb(57, 57, 57);
+}
+
+#lilStar {
+    max-height: 30px;
+    margin:0;
+}
+#pink {
+    background-color: palevioletred;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 div.cuties {
     display: flex;
     flex: auto;
     background-color: palevioletred;
+}
+body.cutie-background{
+    background-color: palevioletred;
+}
+
+nav {
+    margin: 0;
 }
 div.testimonial {
     flex-wrap: wrap;
@@ -26,11 +50,19 @@ h1#coolgreen {
     padding:12px;
     border-radius: 25px;
 }
+
 div.cosmic {
     background-image: url(https://res.cloudinary.com/margaretkellogg/image/upload/v1585842824/cosmicBackground_t8oxpa.jpg);
     margin: auto;
     text-align: center;
 }
+
+div#sizeOfCarousel {
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
 div.contact {
     background-color:whitesmoke;
     display: inline-block;
@@ -60,7 +92,17 @@ div.images {
     flex-wrap: wrap;
     justify-content: center;
 }
-/* homepage */
+
+div.images img{
+    max-height: 240px;
+    width:auto;
+}
+
+
+
+#mainCarousel {
+    background-color: black;
+}/* homepage */
 #mainTitle {
     
         font-size: 80px;
@@ -78,7 +120,17 @@ div.images {
           text-shadow: 0 0 8px #fff, 0 0 14px #fff, 0 0 20px #ece6d3, 0 0 28px #dfc780, 0 0 40px #f7b756;
         }
       }
-
+@media screen and (max-width: 900px) {
+    #mainTitle {
+            font-size: 65px;
+        }
+    
+    div#sizeOfCarousel {
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-bottom: 15%;
+        }      
+    }
 @media screen and (max-width: 700px) {
     div.cuties {
       display: block;
@@ -88,4 +140,12 @@ div.images {
     #mainTitle {
         font-size: 50px;
     }
+
+    div#sizeOfCarousel {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 20%;
+    }
   }
+
+
