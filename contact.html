@@ -52,7 +52,7 @@
                   <form>
                     <label>First Name</label>
                     <br>
-                    <input type="text" name="firstname" placeholder="Your first name...">
+                    <input id="lbl1" type="text" name="firstname" placeholder="Your first name...">
                     <br>
                     <label for="lastname">Last Name</label>
                     <br>
@@ -64,15 +64,14 @@
                     <br>
                     <label for="subject">Comments/Questions</label>
                     <br>
-                    <textarea id="changetext" name="subject" placeholder="How may I help you?..." style="height:170px"></textarea>
+                    <textarea id="changetext" name="subject" placeholder="Comments..." style="height:170px"></textarea>
                     <br>
-                    <input id="clickme" type="submit" value="Submit">
+                    <input id="clickme" onclick="myFunction()" type="button" value="Submit">
                   </form>
-                  <script>
-                    document.getElementById("clickme").onclick = function() {myFunction()};
-                    
-                    function myFunction() {
-                      document.getElementById("changetext").innerHTML = "Thank you for your comments!";
+                    <script>
+                      function myFunction() {
+                      let firstName = document.getElementById("lb1").value
+                      alert("Thank you for your comments, "+ firstName + "! \n You can see my LinkedIn profile at: \n https://www.linkedin.com/in/margaret-kellogg-31b452164/")
                     }
                     </script>
                 </div>
